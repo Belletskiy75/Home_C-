@@ -1,18 +1,18 @@
 ﻿// Напишите программу, которая принимает на вход целое число
 // из отрезка [10,99] и показывает максимальную цифру числа.
 
+
 int N = int.Parse(Console.ReadLine()!);
+int a = N / 10;
+int b = N % 10;
 
 if (N > 10 && N < 99)
 
-    int a = N / 10;
-int b = N % 10;
-if (a > b)
+    if (a > b)
 
-    Console.Write(a);
+        Console.Write(a);
 
-else
+    else
 
-    Console.Write(b);
-
+        Console.Write(b);
 
